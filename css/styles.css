@@ -26,7 +26,6 @@ img {
   left: 50%;
   color: white;
   font-size: 40px;
-  z-index: 10;
 }
 
 .line::after {
@@ -132,19 +131,19 @@ li {
 }
 
 li:first-child {
-  animation: slide-right 1s;
+  animation: slide-right 3s;
   margin-bottom: 50vh;
   border-bottom-right-radius: 0;
 }
 
 li:nth-child(2) {
   top: 50vh;
-  animation: slide-left 2s;
+  animation: slide-left 4s;
   border-bottom-right-radius: 0;
 }
 
 li:last-child {
-  animation: slide-right 3s;
+  animation: slide-right 5s;
 }
 
 h2 {
@@ -186,9 +185,6 @@ button:hover {
   0% {
     transform: translateY(-100vh);
   }
-  50% {
-    transform: translateY(-50vh);
-  }
   100% {
     transform: translateY(0vh);
   }
@@ -210,8 +206,8 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
-  .right {
-    float: left;
+  .line {
+    left: 0;
   }
 
   .box {
@@ -219,8 +215,19 @@ button:hover {
     display: block;
   }
 
-  .line {
-    left: 0;
+  .time2 {
+    display: block;
+    float: none;
+  }
+
+  #time1, #time3 {
+    display: block;
+    animation: slide-left 3s;
+    margin-bottom: 5vh;
+  }
+
+  #time3 {
+    z-index: -1;
   }
 }
 
