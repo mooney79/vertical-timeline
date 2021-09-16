@@ -4,44 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vertical Timeline</title>
     <link rel="stylesheet" href="./styles/normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="./css/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="https://kit.fontawesome.com/e6db931558.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <ul>
-        <li class="left box" id="time1"><i class="fa-solid fa-couch">></i>1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis odio officia tempora ex, dolor illo eveniet blanditiis quibusdam ipsam nemo sed autem nam voluptatibus magnam soluta, neque sapiente, quod veritatis!
+    <div class="line">
+        <i class="fas fa-mask"></i>
+    </div>               
+    
+     <ul class="timeline">
+        <li class="left box" id="time1">
+            <div class="date">3:30 PM</div>
+            <h2>Things Heat Up</h2>
+            <p>Tempers flared in the classroom as the assignment began to get under the students' skins.  Vinny's calm demeanor seemed to taunt them, and they were not taking it well.</p>
             <button>More</button>
         </li>
-        <li class="line"><i class="fa-solid fa-atom-simple"></i></li>               
-        <li class="right box" id="time2">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellendus id facere illo, consectetur, et, eaque nisi facilis quis magnam nulla velit eligendi alias. Saepe suscipit iste quas consequuntur vel.
-            <img src="./images/vinny.jpeg" alt="An image of Vinny the duck">
-        </li>
-        <li class="left box" id="time3">3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius suscipit sunt aut ducimus molestias corporis obcaecati veniam asperiores recusandae esse in incidunt excepturi delectus, consequatur beatae. Iusto similique totam nisi!
+
+        <li class="right box" id="time2">
+            <div class="date">5:00 PM</div> 
+            <div class="photo-card">
+                <img src="./images/vinny.jpeg" alt="An image of Vinny the duck">
+                <h2> The Victim </h2>
+            </div>
+            <p>Vinny was seen sitting peacefully on Stephanie's desk as his classmates left for the day.  Above is the last known photo of the victim.</p>
             <button>More</button>
+        </li>
+
+        <li class="left box" id="time3">
+            <h2>Last Words</h2>
+            <div class="date">9:00 AM</div>
+            <p id="quote">&nbsp &nbsp "Quack"</p>
+            <p>Vinny was discovered missing, and hasn't been seen since! Which of these sociopaths is responsible for his abduction... and possible murder?</p>    
         </li>               
     </ul>
+
 </body>
 </html>
-
-
-<!-- 
-
-Recreate the provided three-column layout in HTML and CSS.
-basic page structure (html only)
-first line of css
-three column layout
-color added
-icons in place
-hover states and transitions implemented
-mission complete
-
-Hey, Mikey, I Think He Likes It Mode
-Use media queries to make your application responsive. Mobile should display two-columns 
-and desktop should display three columns (see two-column layout).
-
-Caffeinated Mode
-Animate timeline events so they slide in as the user scrolls down.Build a vertical 
-timeline.
--->   
